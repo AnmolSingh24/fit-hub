@@ -2,15 +2,11 @@
     display: flex;
     padding: 2rem;
     font-size: 1.7rem;
-    color: #fff;
+    color: #ffffff;
     list-style: none;
     gap: 6rem;
+}
 
-    /* &:hover {
-        background-color: red;
-    } */
-
-    .navbars ul li &:hover {
-        background-color: red;
-    }
+.navbars ul li:hover {
+    background-color: red;
 }
