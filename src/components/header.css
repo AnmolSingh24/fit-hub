@@ -6,7 +6,11 @@
     list-style: none;
     gap: 6rem;
 
-    &:hover {
+    /* &:hover {
+        background-color: red;
+    } */
+
+    .navbars ul li &:hover {
         background-color: red;
     }
 }
