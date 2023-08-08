@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Roboto&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: red;
+    }
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+section .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 1;
+    background: black;
+}
+
+section .header .logo {
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+}
+
+section .header .logo span {
+    color: red;
+}
+
+.home {
+    padding: 0;
+    margin-top: 7rem;
+}
+
+.home .slide {
+    min-height: 80vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+}
+
+.home .content,
+span,
+h3 {
+    color: #fff;
+}
+
+/* #menu-btn {
+    font-size: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+} */
+
+.swiper-slide .content {
+    width: 60rem;
+}
+
+.swiper-slide .content span {
+    font-size: 2rem;
+    color: #ff0000;
+    display: block;
+    padding: 1rem 0;
+}
+
+.swiper-slide .content h3 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
+    font-size: 1.5rem;
+    color: #fff;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.swiper-pagination-bullet {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #fff;
+    border-radius: 0;
+
+    &.swiper-pagination-bullet-active {
+        background-color: #ff0000;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 0 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    .home .slide {
+        padding: 2rem 5%;
+    }
+
+    .home .slide .content {
+        width: 50rem;
+    }
+
+    h3 {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* #menu-btn {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      color: #fff;
+    } */
+
+    .header {
+        padding: 2rem;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-color: #000;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
