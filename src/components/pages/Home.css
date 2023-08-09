@@ -14,6 +14,10 @@
     transition: all .2s linear;
 }
 
+body {
+    color: #fff;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -33,44 +37,13 @@ html {
     }
 }
 
-body {
-    background-color: black;
-}
-
-section {
-    padding: 5rem 9%;
-}
-
-section .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 9%;
-    z-index: 1;
-    background: black;
-}
-
-section .header .logo {
-    font-weight: bolder;
-    color: white;
-    font-size: 3rem;
-}
-
-section .header .logo span {
-    color: red;
-}
-
 .home {
     padding: 0;
     margin-top: 7rem;
 }
 
 .home .slide {
-    min-height: 80vh;
+    min-height: 70vh;
     background-size: cover !important;
     background-position: center !important;
     padding: 2rem 9%;
@@ -78,27 +51,24 @@ section .header .logo span {
     align-items: center;
 }
 
-.home .content,
-span,
-h3 {
-    color: #fff;
-}
-
 /* #menu-btn {
     font-size: 3rem;
     color: #ffffff;
     cursor: pointer;
+    display: none;
 } */
 
-.swiper-slide .content {
-    width: 60rem;
-}
+/*  swiper starts  */
 
 .swiper-slide .content span {
     font-size: 2rem;
     color: #ff0000;
     display: block;
     padding: 1rem 0;
+}
+
+.swiper-slide .content {
+    width: 60rem;
 }
 
 .swiper-slide .content h3 {
@@ -114,10 +84,10 @@ h3 {
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
     font-size: 1.5rem;
     color: #fff;
+}
 
-    &:hover {
-        transform: scale(1.1);
-    }
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .swiper-pagination-bullet {
@@ -125,21 +95,18 @@ h3 {
     width: 1.5rem;
     background-color: #fff;
     border-radius: 0;
-
-    &.swiper-pagination-bullet-active {
-        background-color: #ff0000;
-    }
-
 }
+
+&.swiper-pagination-bullet-active {
+    background-color: #ff0000;
+}
+
+/*  swiper ends  */
 
 @media (max-width: 991px) {
 
     html {
         font-size: 55%;
-    }
-
-    .header {
-        padding: 0 2rem;
     }
 
     section {
@@ -169,11 +136,7 @@ h3 {
       color: #fff;
     } */
 
-    .header {
-        padding: 2rem;
-    }
-
-    .navbar {
+    .nav-container .navbar {
         position: absolute;
         top: 99%;
         left: 0;
@@ -181,7 +144,7 @@ h3 {
         border-color: #000;
     }
 
-    .navbar a {
+    .nav-container .navbar a {
         display: block;
         font-size: 2rem;
     }
@@ -195,3 +158,122 @@ h3 {
     }
 
 }
+
+/*  testimonal starts  */
+
+.test-container h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: 5rem auto 8rem auto;
+    width: 200px;
+    height: 50px;
+    color: #ff0000;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.test-container .test-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.test-content article {
+    background: linear-gradient(130deg, rgb(22, 22, 22) 93%, transparent 90%);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.test-content div h2 {
+    padding-top: 0;
+    font-size: 2rem;
+}
+
+.test-content div p,
+article p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    line-height: 1.8;
+}
+
+.test-content article .test-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    gap: 1rem;
+}
+
+.test-content article .test-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.test-content article .test-img .test-name {
+    font-size: 1.3rem;
+}
+
+.test-content a {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/*  testimonal ends  */
+
+/*  footer starts  */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+}
+
+.footer-container .box h3 {
+    font-size: 2.5rem;
+}
+
+.footer-container .box .timings,
+form {
+    padding-top: 2rem;
+}
+
+.footer-container .box .timings p {
+    line-height: 2.5;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.box .timings p i {
+    font-weight: 600;
+    color: #ff0000;
+}
+
+.box form input,
+textarea {
+    margin-top: 1rem;
+    padding: 1.2rem 3.5rem;
+    border-radius: 5px;
+    background-color: rgb(22, 22, 22);
+}
+
+.box form .send-btn {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+/*  footer ends  */

@@ -1,42 +1,134 @@
 import React from 'react';
 import './Home.css'
 
+// var swiper = new swiper(".home-slider", {
+//     spaceBetween: 20,
+//     effect: "fade",
+//     grabCursor: true,
+//     loop: true,
+//     centeredSlides: true,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+// });
+
 const Home = () => {
     return (
-        <header className='header'>
-            <a href='#' className='logo'><span>FIT</span>HUB</a>
-            <i className="bi bi-list" id='menu-btn'></i>
-            <section className='home' id='home'>
-                <div className='swiper home-slider'>
-                    <div className='swiper-wrapper'>
-                        <div className='swiper-slide slide' style={{ backgroundImage: "url('/src/images/home-bg-1.jpg')" }}>
-                            <div className='content'>
-                                <span>Be Strong, Be Fit</span>
-                                <h3>Make yourself stronger that your excuses.</h3>
-                                <a href='#' className='btn'>Get Started</a>
-                            </div>
-                        </div>
 
-                        <div className='swiper-slide slide'>
-                            <div className='content' style={{ backgroundImage: "url('/src/images/home-bg-2.jpg')" }}>
-                                <span>Be Strong, Be Fit</span>
-                                <h3>Make yourself stronger that your excuses.</h3>
-                                <a href='#' className='btn'>Get Started</a>
-                            </div>
+        <section className='home' id='home' >
+            <div className='swiper home-slider'>
+                <div className='swiper-wrapper'>
+                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691568834/home-bg-1_hpznrn.jpg')" }}>
+                        <div className='content'>
+                            <span>Be Strong, Be Fit</span>
+                            <h3>Make yourself stronger that your excuses.</h3>
+                            <a href='#' className='btn'>Get Started</a>
                         </div>
+                    </div>
 
-                        <div className='swiper-slide slide' style={{ backgroundImage: "url('/src/images/home-bg-3.jpg')" }}>
-                            <div className='content'>
-                                <span>Be Strong, Be Fit</span>
-                                <h3>Make yourself stronger that your excuses.</h3>
-                                <a href='#' className='btn'>Get Started</a>
+                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691569008/home-bg-2_obaqcu.jpg')" }}>
+                        <div className='content'>
+                            <span>Be Strong, Be Fit</span>
+                            <h3>Make yourself stronger that your excuses.</h3>
+                            <a href='#' className='btn'>Get Started</a>
+                        </div>
+                    </div>
+
+                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691569037/home-bg-3_hkewj2.jpg')" }}>
+                        <div className='content'>
+                            <span>Be Strong, Be Fit</span>
+                            <h3>Make yourself stronger that your excuses.</h3>
+                            <a href='#' className='btn'>Get Started</a>
+                        </div>
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div className='test-container'>
+                <h1>Testimonals</h1>
+                <div className='test-content'>
+                    <div>
+                        <h2>What our clients says?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+                            Sed tincidunt leo nec sapien volutpat, at laoreet libero <br /> rhoncus.
+                            Nunc at felis at leo faucibus aliquam.
+                        </p>
+                        <a href='/'>Read More</a>
+                    </div>
+
+                    <article>
+                        <p>Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.</p>
+                        <div className='test-img'>
+                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596402/pic-1_rsvzyy.png' />
+                            <div className='test-name'>
+                                <h3>Martin D'souza</h3>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                    </article>
+
+                    <article>
+                        <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.</p>
+                        <div className='test-img'>
+                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png' />
+                            <div className='test-name'>
+                                <h3>Lara Doe</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.</p>
+                        <div className='test-img'>
+                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596624/pic-3_hm7f8s.png' />
+                            <div className='test-name'>
+                                <h3>Lisa Christopher</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div className='footer-container'>
+                <div className='box'>
+                    <h3>Quick Links</h3>
+                </div>
+
+                <div className='box'>
+                    <h3>Opening Hours</h3>
+                    <div className='timings'>
+                        <p> Monday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Tuesday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Wednesday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Thursday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Friday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Saturday : <i> 7:00am - 9:00pm </i> </p>
+                        <p> Sunday : <i> closed </i> </p>
                     </div>
                 </div>
-            </section>
-        </header>
+
+                <div className='box'>
+                    <h3>Contact Us</h3>
+                    <div className='timings'>
+                        <p> +111-222-3333 </p>
+                        <p> fithub@gmail.com </p>
+                        <p> Mumbai, India - 400303 </p>
+                    </div>
+                </div>
+
+                <div className='box'>
+                    <h3>Send Us a Message</h3>
+                    <form>
+                        <input type="text" name="name" className="name" placeholder="Lisa" /> <br />
+                        <input type="email" name="email" className="email" placeholder="Lisa@gmail.com" /> <br />
+                        <input type="tel" name="phone" className="email" placeholder="+34681585" /> <br />
+                        <textarea type="text" name="message" className="email" placeholder="Your Message"></textarea> <br />
+                        <input type="submit" value="Send" className="send-btn" />
+                    </form>
+                </div>
+            </div>
+        </section>
     );
 }
 
