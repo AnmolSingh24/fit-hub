@@ -1,12 +1,58 @@
-.navbars ul {
+body {
+    background-color: black;
+}
+
+.nav-container {
+    padding: 5rem 9%;
+}
+
+.nav-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    background: black;
+}
+
+.nav-container .logo {
+    font-weight: bolder;
+    color: white;
+    font-size: 3rem;
+}
+
+.nav-container .logo span {
+    color: red;
+}
+
+.nav-container .navbars ul {
     display: flex;
     padding: 2rem;
     font-size: 1.7rem;
-    color: #ffffff;
     list-style: none;
     gap: 6rem;
 }
 
-.navbars ul li:hover {
+.nav-container .navbars ul a {
+    color: #fff;
+}
+
+.nav-container .navbars ul a:hover {
     background-color: red;
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 0 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem;
+    }
 }
