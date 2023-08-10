@@ -1,4 +1,4 @@
-/*  pricing plan starts  */
+/*pricing plan starts */
 
 .price-title h1 {
     font-size: 3rem;
@@ -12,38 +12,38 @@
     border-radius: 10px;
 }
 
-.price-plans {
+.price-title .price-plans {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 }
 
-.plans-info {
+.price-title .plans-info {
     margin-top: 5rem;
     text-align: center;
 }
 
-.plans-info:nth-of-type(2) {
+.price-title .plans-info:nth-of-type(2) {
     margin-top: 5rem;
     background: linear-gradient(130deg, rgb(22, 22, 22), 93%, transparent 90%);
     height: 430px;
 }
 
-.plans-info h2 {
+.price-title .plans-info h2 {
     padding-top: 2rem;
 }
 
-.plans-info h1 {
+.price-title .plans-info h1 {
     margin: 0;
     border: none;
     color: #ff0000;
 }
 
-.plans-info p {
+.price-title .plans-info p {
     font-size: 1.6rem;
     line-height: 2;
     padding-top: 2rem;
 }
 
-/*  pricing plan ends  */
+/*  pricing plan ends */
