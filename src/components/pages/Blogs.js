@@ -25,19 +25,22 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="blog-container">
-            {blog.map((blog) => (
-                <div className="card" key={blog.id}>
-                    <img src={blog.image} alt={blog.title} style={{ height: '250px' }} />
-                    <div className="card-content">
-                        <h2>{blog.title}</h2>
-                        <p>{blog.excerpt}</p>
-                        <a href={`blog/${blog.id}`} className="btn">
-                            Read More
-                        </a>
+        <div className='title'>
+            <h1>Blogs</h1>
+            <div className="blog-container">
+                {blog.map((blog) => (
+                    <div className="card" key={blog.id}>
+                        <img src={blog.image} alt={blog.title} style={{ height: '250px' }} />
+                        <div className="card-content">
+                            <h2>{blog.title}</h2>
+                            <p>{blog.excerpt}</p>
+                            <a href={`blog/${blog.id}`} className="btn">
+                                Read More
+                            </a>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     )
 }

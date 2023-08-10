@@ -1,5 +1,17 @@
 /*  blog starts  */
 
+.title h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: 10rem auto 0rem auto;
+    width: 300px;
+    height: 50px;
+    color: #ff0000;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 .blog-container {
     display: flex;
     justify-content: center;
@@ -15,7 +27,7 @@
     background-color: rgb(22, 22, 22);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 9rem 2rem;
+    margin: 3rem 2rem;
 }
 
 .card img {
