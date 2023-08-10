@@ -1,0 +1,50 @@
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.App .card {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 9rem 2rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.card p {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 2rem 7.5rem;
+    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
