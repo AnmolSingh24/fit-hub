@@ -30,6 +30,10 @@
     margin: 3rem 2rem;
 }
 
+.blog-container .card:hover {
+    transform: scale(1.03)
+}
+
 .card img {
     width: 100%;
     height: auto;
