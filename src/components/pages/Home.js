@@ -14,8 +14,8 @@ import './Home.css'
 // });
 
 const Home = () => {
-    return (
 
+    return (
         <section className='home' id='home' >
             <div className='swiper home-slider'>
                 <div className='swiper-wrapper'>
@@ -42,7 +42,31 @@ const Home = () => {
                             <a href='#' className='btn'>Get Started</a>
                         </div>
                     </div>
-                    <div className="swiper-pagination"></div>
+                    {/* <div className="swiper-pagination"></div> */}
+                </div>
+            </div>
+
+            <div className='fitness-workout-container'>
+                <h1>Fitness Workouts</h1>
+                <div className="workout-types">
+                    <div className="workout-card" id="card1">
+                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691645794/cardio_d4gtxf.jpg" alt="Workout 1" />
+                        <h2>Cardio</h2>
+                        <p>Engage in high-intensity cardio workouts to improve endurance and burn calories.</p>
+                        <a href='/' className='btn'>Start Training</a>
+                    </div>
+                    <div className="workout-card" id="card2">
+                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691646410/strength-training_kdahai.jpg" alt="Workout 2" />
+                        <h2>Strength Training</h2>
+                        <p>Build muscle and strength through weight lifting and resistance exercises.</p>
+                        <a href='/' className='btn'>Start Training</a>
+                    </div>
+                    <div className="workout-card" id="card3">
+                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691646282/yoga.webp_mkzaqi.webp" alt="Workout 3" />
+                        <h2>Yoga</h2>
+                        <p>Practice yoga to improve flexibility, balance and mental, physical well-being.</p>
+                        <a href='/' className='btn'>Start Training</a>
+                    </div>
                 </div>
             </div>
 
@@ -55,7 +79,7 @@ const Home = () => {
                             Sed tincidunt leo nec sapien volutpat, at laoreet libero <br /> rhoncus.
                             Nunc at felis at leo faucibus aliquam.
                         </p>
-                        <a href='/'>Read More</a>
+                        <a href='/' className='btn'>Read More</a>
                     </div>
 
                     <article>
@@ -124,7 +148,7 @@ const Home = () => {
                         <input type="email" name="email" className="email" placeholder="Lisa@gmail.com" /> <br />
                         <input type="tel" name="phone" className="email" placeholder="+34681585" /> <br />
                         <textarea type="text" name="message" className="email" placeholder="Your Message"></textarea> <br />
-                        <input type="submit" value="Send" className="send-btn" />
+                        <input type="submit" value="Send" className="btn" />
                     </form>
                 </div>
             </div>

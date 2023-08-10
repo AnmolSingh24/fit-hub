@@ -90,7 +90,7 @@ html {
     transform: scale(1.1);
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     height: 1.5rem;
     width: 1.5rem;
     background-color: #fff;
@@ -99,7 +99,7 @@ html {
 
 &.swiper-pagination-bullet-active {
     background-color: #ff0000;
-}
+} */
 
 /*  swiper ends  */
 
@@ -159,6 +159,74 @@ html {
 
 }
 
+/*  latest work starts  */
+
+.fitness-workout-container h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: 8rem auto 8rem auto;
+    width: 300px;
+    height: 50px;
+    color: #ff0000;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.fitness-workout-container .workout-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.workout-card {
+    width: 24.5%;
+    height: 450px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+.workout-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.workout-card img {
+    border-radius: 5px;
+    padding: 1rem;
+    width: 360px;
+    height: 250px;
+    text-align: center;
+}
+
+.workout-card h2 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.workout-card p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0.5rem 0;
+}
+
+.workout-card a {
+    margin: 2rem 10rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/*  latest work ends  */
+
 /*  testimonal starts  */
 
 .test-container h1 {
@@ -216,16 +284,6 @@ article p {
     font-size: 1.3rem;
 }
 
-.test-content a {
-    margin-top: 2rem;
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    padding-right: 3rem;
-    background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
-    font-size: 1.5rem;
-    color: #fff;
-}
-
 /*  testimonal ends  */
 
 /*  footer starts  */
@@ -266,7 +324,7 @@ textarea {
     background-color: rgb(22, 22, 22);
 }
 
-.box form .send-btn {
+.box form .btn {
     margin-top: 1.5rem;
     display: inline-block;
     padding: 1rem 2.8rem;
