@@ -1,0 +1,63 @@
+.contact-container {
+    margin-top: 10rem;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: 8rem auto 0 auto;
+    width: 200px;
+    height: 50px;
+    color: #ff0000;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.contact-container p {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact-container .contact-form {
+    margin-top: 2rem;
+    margin-left: 50rem;
+    display: flex;
+    gap: 15rem;
+}
+
+.contact-container .contact-form .form h2 {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+}
+
+.contact-container .contact-form .form .form-group {
+    margin-top: 1rem;
+    margin-left: -7rem;
+}
+
+.contact-form .form .form-group input,
+textarea {
+    padding: 1.5rem 7rem;
+    border-radius: 5px;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+}
+
+.contact-form .form .form-group textarea {
+    margin-top: 0rem;
+}
+
+.contact-form .form a {
+    margin-left: -6.5rem;
+}
+
+.contact-form .contact-info {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.contact-form .contact-info h2 {
+    font-size: 2.5rem;
+}
