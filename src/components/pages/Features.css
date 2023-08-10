@@ -1,0 +1,76 @@
+.feature-title h1 {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: 10rem auto 0rem auto;
+    width: 300px;
+    height: 50px;
+    color: #ff0000;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.feature-title .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 2rem 0;
+}
+
+.feature-title .box-container .box,
+.box-container .second {
+    width: 400px;
+    background: rgb(22, 22, 22);
+}
+
+.feature-title .box-container .second {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.feature-title .box-container .box:hover .image img,
+.box-container .second:hover .image img {
+    transform: scale(1.1);
+}
+
+.feature-title .box-container .box .image,
+.box-container .second .image {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.feature-title .box-container .box .image img,
+.box-container .second .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feature-title .box-container .box .content,
+.box-container .second .content {
+    padding: .1rem;
+    text-align: center;
+}
+
+.feature-title .box-container .box .content img,
+.box-container .second .content img {
+    height: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    filter: invert(1);
+}
+
+.feature-title .box-container .box .content h3,
+.box-container .second .content h3 {
+    font-size: 2rem;
+    color: #f00;
+}
+
+.feature-title .box-container .box .content p,
+.box-container .second .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
