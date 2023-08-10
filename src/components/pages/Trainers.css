@@ -12,7 +12,7 @@
     border-radius: 10px;
 }
 
-.box-container {
+.trainers .box-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,23 +20,23 @@
     margin-top: 5rem;
 }
 
-.box-container .box {
+.trainers .box-container .box {
     height: 40rem;
     overflow: hidden;
     position: relative;
 }
 
-.box-container .box:hover .content {
+.trainers .box-container .box:hover .content {
     transform: translateY(0);
 }
 
-.box-container .box img {
+.trainers .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.box-container .box .content {
+.trainers .box-container .box .content {
     position: absolute;
     top: 29rem;
     right: 0;
@@ -47,30 +47,30 @@
     transform: translateY(6.5rem);
 }
 
-.box-container .box .content span {
+.trainers .box-container .box .content span {
     font-size: 1.5rem;
     color: #f00;
 }
 
-.box-container .box .content h3 {
+.trainers .box-container .box .content h3 {
     font-size: 2rem;
     color: #fff;
     padding-top: .5rem;
 }
 
-.box-container .box .content .share {
+.trainers .box-container .box .content .share {
     padding-top: 2rem;
     margin-top: 1.5rem;
     border-top: 0.1rem solid #aaa;
 }
 
-.box-container .box .content .share a {
+.trainers .box-container .box .content .share a {
     font-size: 2rem;
     color: #fff;
     margin-right: 1.5rem;
 }
 
-.box-container .box .content .share a:hover {
+.trainers .box-container .box .content .share a:hover {
     color: #f00;
 }
 
