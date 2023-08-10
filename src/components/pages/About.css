@@ -1,3 +1,5 @@
+/*  about starts  */
+
 .about-content {
     display: flex;
     justify-content: center;
@@ -50,3 +52,5 @@
     font-size: 1.4rem;
     line-height: 2;
 }
+
+/*  about ends  */
