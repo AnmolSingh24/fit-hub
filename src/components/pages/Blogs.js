@@ -25,7 +25,7 @@ const Blogs = () => {
     ];
 
     return (
-        <div className="App">
+        <div className="blog-container">
             {blog.map((blog) => (
                 <div className="card" key={blog.id}>
                     <img src={blog.image} alt={blog.title} style={{ height: '250px' }} />
