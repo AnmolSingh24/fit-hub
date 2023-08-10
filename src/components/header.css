@@ -30,14 +30,17 @@ body {
 
 .nav-container .navbars ul {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 1.7rem;
     list-style: none;
-    gap: 6rem;
+    gap: 2rem;
 }
 
 .nav-container .navbars ul a {
+    padding: 1.5rem;
     color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
 .nav-container .navbars ul a:hover {
