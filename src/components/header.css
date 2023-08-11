@@ -33,7 +33,7 @@ body {
     padding: 1rem;
     font-size: 1.7rem;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-container .navbars ul a {
@@ -47,15 +47,58 @@ body {
     background-color: red;
 }
 
+#menu-btn {
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+/*  header media queries end  */
+
+/*  for 991 pixel screen  */
 @media (max-width: 991px) {
     .header {
         padding: 0 2rem;
     }
 }
 
-
+/*  for than 768 pixel screen  */
 @media (max-width: 768px) {
-    .header {
-        padding: 2rem;
+    .header a {
+        padding-bottom: .2rem;
+        margin-left: -3rem;
+    }
+
+    .nav-container .navbars ul {
+        padding-left: 5rem;
+    }
+
+    .nav-container .navbars ul a {
+        font-size: 1.5rem;
     }
 }
+
+/*  less than 450 pixel screen  */
+
+@media (max-width: 450px) {
+    .header {
+        padding-bottom: 1.5rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        color: #fff;
+        padding-top: 1rem;
+        padding-left: 5rem;
+    }
+
+    /* .nav-container .navbars ul #menu-btn svg {} */
+
+    .nav-container .navbars ul a {
+        display: none;
+    }
+}
+
+/*  header media queries end  */
