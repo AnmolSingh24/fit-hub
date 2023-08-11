@@ -14,7 +14,7 @@ const Blogs = () => {
             id: 2,
             title: 'High-Intensity Interval Training (HIIT) Guide',
             image: 'https://res.cloudinary.com/djdblxcxt/image/upload/v1691654671/blog-img-2_vkpul5.jpg',
-            excerpt: 'Learn about the benefits of HIIT and how to incorporate it into your fitness routine.'
+            excerpt: 'Learn about the benefits of HIIT and how to incorporate it into your fitness routine and health.'
         },
         {
             id: 3,
@@ -30,11 +30,11 @@ const Blogs = () => {
             <div className="blog-container">
                 {blog.map((blog) => (
                     <div className="card" key={blog.id}>
-                        <img src={blog.image} alt={blog.title} style={{ height: '250px' }} />
+                        <img src={blog.image} alt={blog.title} />
                         <div className="card-content">
                             <h2>{blog.title}</h2>
                             <p>{blog.excerpt}</p>
-                            <a href={`blog/${blog.id}`} className="btn">
+                            <a href={`blog/${blog.id}`} className="more-btn">
                                 Read More
                             </a>
                         </div>

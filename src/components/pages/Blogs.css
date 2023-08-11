@@ -36,7 +36,7 @@
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 230px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -48,19 +48,23 @@
 .card h2 {
     font-size: 1.8rem;
     color: #fff;
+    text-align: center;
 }
 
 .card p {
     font-size: 1.4rem;
     color: #fff;
+    padding-top: 1rem;
+    text-align: center;
 }
 
-.btn {
+.more-btn {
     display: inline-block;
-    padding: 8px 15px;
-    margin: 2rem 7.5rem;
+    padding: 1.2rem 3rem;
+    margin: 2rem 6rem;
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
     color: #fff;
+    font-size: 1.3rem;
     text-decoration: none;
     border-radius: 3px;
 }
@@ -70,4 +74,34 @@
 }
 
 /*  card ends  */
+
+/*  blogs media query starts  */
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5rem;
+    }
+
+    .blog-container .card {
+        width: 300px;
+        height: 400px;
+    }
+
+    .card img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .more-btn {
+        margin: 2rem 8rem;
+    }
+}
+
+@media (max-width: 450px) {}
+
+/*  blogs media query ends  */
 /*  blog ends  */
