@@ -78,7 +78,7 @@ html {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /*  latest work starts  */
@@ -118,7 +118,7 @@ html {
 .workout-card img {
     border-radius: 5px;
     padding: 1rem;
-    width: 360px;
+    width: 373px;
     height: 250px;
     text-align: center;
 }
@@ -139,7 +139,7 @@ html {
 }
 
 .workout-card a {
-    margin: 2rem 10rem;
+    margin: 2rem 11rem;
     display: inline-block;
     padding: 1rem 2.8rem;
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);

@@ -13,6 +13,17 @@ import './Home.css'
 //     },
 // });
 
+const WorkoutCard = ({ img, title, text, btn }) => {
+    return (
+        <div className="workout-card" id="card1">
+            <img src={img} alt="Workout 1" />
+            <h2>{title}</h2>
+            <p>{text}.</p>
+            <a href='/' className='btn'>{btn}</a>
+        </div>
+    );
+}
+
 const Feedback = ({ text, img, name }) => {
     return (
         <article>
@@ -46,24 +57,13 @@ const Home = () => {
             <div className='fitness-workout-container'>
                 <h1>Fitness Workouts</h1>
                 <div className="workout-types">
-                    <div className="workout-card" id="card1">
-                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691645794/cardio_d4gtxf.jpg" alt="Workout 1" />
-                        <h2>Cardio</h2>
-                        <p>Engage in high-intensity cardio workouts to improve endurance and burn calories.</p>
-                        <a href='/' className='btn'>Start Training</a>
-                    </div>
-                    <div className="workout-card" id="card2">
-                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691646410/strength-training_kdahai.jpg" alt="Workout 2" />
-                        <h2>Strength Training</h2>
-                        <p>Build muscle and strength through weight lifting and resistance exercises.</p>
-                        <a href='/' className='btn'>Start Training</a>
-                    </div>
-                    <div className="workout-card" id="card3">
-                        <img src="https://res.cloudinary.com/djdblxcxt/image/upload/v1691646282/yoga.webp_mkzaqi.webp" alt="Workout 3" />
-                        <h2>Yoga</h2>
-                        <p>Practice yoga to improve flexibility, balance and mental, physical well-being.</p>
-                        <a href='/' className='btn'>Start Training</a>
-                    </div>
+
+                    <WorkoutCard img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691645794/cardio_d4gtxf.jpg'} title="Cardio" text="Engage in high-intensity cardio workouts to improve endurance and burn calories." btn="Start Training" />
+
+                    <WorkoutCard img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691646410/strength-training_kdahai.jpg'} title="Strength Training" text="Build muscle and strength through weight lifting and resistance exercises." btn="Start Training" />
+
+                    <WorkoutCard img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691646282/yoga.webp_mkzaqi.webp'} title="Yoga" text="Practice yoga to improve flexibility, balance and mental, physical well-being." btn="Start Training" />
+
                 </div>
             </div>
 
