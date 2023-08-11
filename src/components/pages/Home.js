@@ -97,7 +97,7 @@ const Home = () => {
                         <div className='test-img'>
                             <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png' />
                             <div className='test-name'>
-                                <h3>Lara Doe</h3>
+                                <h3>Laraya Stafford</h3>
                             </div>
                         </div>
                     </article>
