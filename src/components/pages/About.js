@@ -9,8 +9,8 @@ const About = () => {
                 <div className='info'>
                     <h2>About Us</h2>
                     <h1>Everyday is a chance to become better</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. <br /> Curabitur id tellus ac libero lacinia vestibulum.
-                        Fusce quis justo vitae<br /> magna laoreet tristique. Aenean auctor, risus non fringilla placerat,<br /> turpis velit tincidunt odio.
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla <br /> facilisi. Curabitur id tellus ac libero lacinia vestibulum.
+                        Fusce<br />quis justo vitae  magna laoreet tristique. Aenean auctor, risus<br /> non fringilla placerat, turpis velit tincidunt odio.
                     </p>
                 </div>
             </div>

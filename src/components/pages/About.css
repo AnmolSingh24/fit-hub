@@ -3,7 +3,7 @@
 .about-content {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 4rem;
 }
 
 .about-content img {
@@ -31,15 +31,14 @@
 }
 
 .info-container {
-    margin-top: -30rem;
-    margin-right: -70rem;
+    margin: -25rem auto 0 70rem;
 }
 
 .info-items {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -52,5 +51,110 @@
     font-size: 1.4rem;
     line-height: 2;
 }
+
+/*  about media query starts  */
+
+@media (max-width: 768px) {
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    .about-content img {
+        height: 450px;
+    }
+
+    .about-content .info {
+        margin-top: 8rem;
+    }
+
+    .about-content .info h2 {
+        font-size: 2.2rem;
+        color: #ff0000;
+    }
+
+    .about-content .info h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-content .info p {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    .info-items {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40rem;
+        gap: 2rem;
+    }
+
+    .info-name b {
+        color: #ff0000;
+        font-size: 1.3rem;
+    }
+
+    .info-name p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    .about-content img {
+        height: 450px;
+    }
+
+    .about-content .info {
+        margin-top: 8rem;
+    }
+
+    .about-content .info h2 {
+        font-size: 2.2rem;
+        color: #ff0000;
+    }
+
+    .about-content .info h1 {
+        font-size: 1.7rem;
+    }
+
+    .about-content .info p {
+        padding-top: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.8;
+    }
+
+    .info-items {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40rem;
+        gap: 2rem;
+    }
+
+    .info-name b {
+        color: #ff0000;
+        font-size: 1.3rem;
+    }
+
+    .info-name p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+}
+
+/*  about media query ends  */
 
 /*  about ends  */
