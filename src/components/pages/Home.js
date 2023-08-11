@@ -13,36 +13,33 @@ import './Home.css'
 //     },
 // });
 
+const Feedback = ({ text, img, name }) => {
+    return (
+        <article>
+            <p>{text}</p>
+            <div className='test-img'>
+                <img src={img} />
+                <div className='test-name'>
+                    <h3>{name}</h3>
+                </div>
+            </div>
+        </article>
+    );
+}
+
 const Home = () => {
 
     return (
         <section className='home' id='home' >
-            <div className='swiper home-slider'>
-                <div className='swiper-wrapper'>
-                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691568834/home-bg-1_hpznrn.jpg')" }}>
+            <div className='home-slider'>
+                <div className='wrapper'>
+                    <div className='slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691568834/home-bg-1_hpznrn.jpg')" }}>
                         <div className='content'>
                             <span>Be Strong, Be Fit</span>
                             <h3>Make yourself stronger that your excuses.</h3>
                             <a href='#' className='btn'>Get Started</a>
                         </div>
                     </div>
-
-                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691569008/home-bg-2_obaqcu.jpg')" }}>
-                        <div className='content'>
-                            <span>Be Strong, Be Fit</span>
-                            <h3>Make yourself stronger that your excuses.</h3>
-                            <a href='#' className='btn'>Get Started</a>
-                        </div>
-                    </div>
-
-                    <div className='swiper-slide slide' style={{ backgroundImage: "url('https://res.cloudinary.com/djdblxcxt/image/upload/v1691569037/home-bg-3_hkewj2.jpg')" }}>
-                        <div className='content'>
-                            <span>Be Strong, Be Fit</span>
-                            <h3>Make yourself stronger that your excuses.</h3>
-                            <a href='#' className='btn'>Get Started</a>
-                        </div>
-                    </div>
-                    {/* <div className="swiper-pagination"></div> */}
                 </div>
             </div>
 
@@ -82,35 +79,11 @@ const Home = () => {
                         <a href='/' className='btn'>Read More</a>
                     </div>
 
-                    <article>
-                        <p>Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit.</p>
-                        <div className='test-img'>
-                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596402/pic-1_rsvzyy.png' />
-                            <div className='test-name'>
-                                <h3>Martin D'souza</h3>
-                            </div>
-                        </div>
-                    </article>
+                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596402/pic-1_rsvzyy.png'} name="Martin D'Souza" />
 
-                    <article>
-                        <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.</p>
-                        <div className='test-img'>
-                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png' />
-                            <div className='test-name'>
-                                <h3>Laraya Stafford</h3>
-                            </div>
-                        </div>
-                    </article>
+                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png'} name="Laraya Stafford" />
 
-                    <article>
-                        <p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit.</p>
-                        <div className='test-img'>
-                            <img src='https://res.cloudinary.com/djdblxcxt/image/upload/v1691596624/pic-3_hm7f8s.png' />
-                            <div className='test-name'>
-                                <h3>Lisa Christopher</h3>
-                            </div>
-                        </div>
-                    </article>
+                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596624/pic-3_hm7f8s.png'} name="Lisa Christopher" />
                 </div>
             </div>
 

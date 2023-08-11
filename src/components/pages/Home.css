@@ -51,20 +51,18 @@ html {
     align-items: center;
 }
 
-/*  swiper starts  */
-
-.swiper-slide .content span {
+.slide .content span {
     font-size: 2rem;
     color: #ff0000;
     display: block;
     padding: 1rem 0;
 }
 
-.swiper-slide .content {
+.slide .content {
     width: 60rem;
 }
 
-.swiper-slide .content h3 {
+.slide .content h3 {
     font-size: 5rem;
     color: #ffffff;
 }
@@ -82,20 +80,6 @@ html {
 .btn:hover {
     transform: scale(1.1);
 }
-
-/* .swiper-pagination-bullet {
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: #fff;
-    border-radius: 0;
-    z-index: 1;
-}
-
-&.swiper-pagination-bullet-active {
-    background-color: #ff0000;
-} */
-
-/*  swiper ends  */
 
 /*  latest work starts  */
 
@@ -309,7 +293,7 @@ form {
 
 @media (max-width: 768px) {
 
-    .swiper-wrapper .slide a {
+    .wrapper .slide a {
         margin-left: 1rem;
     }
 
@@ -396,7 +380,7 @@ form {
         font-size: 55%;
     }
 
-    .swiper-wrapper .slide a {
+    .wrapper .slide a {
         margin-left: 1rem;
     }
 
