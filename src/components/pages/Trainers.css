@@ -74,4 +74,51 @@
     color: #f00;
 }
 
+/*  trainers media query starts  */
+
+@media (max-width: 768px) {
+
+    .trainers h1 {
+        width: 130px;
+    }
+
+    .trainers .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        margin-left: 8rem;
+    }
+
+    .trainers .box-container .box {
+        margin-top: 5rem;
+    }
+
+    .trainers .box-container .box img {
+        width: 80%;
+    }
+
+    .trainers .box-container .box .content {
+        width: 280px;
+    }
+}
+
+@media (max-width: 450px) {
+    .trainers .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        margin-left: 7rem;
+    }
+
+    .trainers .box-container .box .content {
+        width: 217px;
+    }
+}
+
+/*  trainers media query ends  */
+
 /*  trainer ends  */
