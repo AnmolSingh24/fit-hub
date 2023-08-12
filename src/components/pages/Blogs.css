@@ -78,6 +78,11 @@
 /*  blogs media query starts  */
 /*  less than 768px screen*/
 @media (max-width: 768px) {
+
+    .title h1 {
+        width: 120px;
+    }
+
     .blog-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
