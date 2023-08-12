@@ -1,3 +1,4 @@
+/*  contact starts  */
 .contact-container {
     margin-top: 10rem;
 }
@@ -21,10 +22,10 @@
 }
 
 .contact-container .contact-form {
-    margin-top: 2rem;
-    margin-left: 50rem;
     display: flex;
-    gap: 15rem;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .contact-container .contact-form .form h2 {
@@ -47,6 +48,7 @@ textarea {
 
 .contact-form .form .form-group textarea {
     margin-top: 0rem;
+    padding: .5rem 6.8rem;
 }
 
 .contact-form .form a {
@@ -61,3 +63,35 @@ textarea {
 .contact-form .contact-info h2 {
     font-size: 2.5rem;
 }
+
+/*  contact media query starts  */
+
+@media (max-width: 768px) {
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        margin-left: 6rem;
+    }
+
+    .contact-form .form .form-group textarea {
+        padding: .5rem 7.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .contact-form .contact-info {
+        padding: 0 8rem 2rem 0;
+        margin-top: -6rem;
+    }
+}
+
+/*  contact media query ends  */
+/*  contact ends  */
