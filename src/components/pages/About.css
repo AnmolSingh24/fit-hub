@@ -31,7 +31,7 @@
 }
 
 .info-container {
-    margin: -25rem auto 0 70rem;
+    margin: -30rem auto 0 70rem;
 }
 
 .info-items {
@@ -68,6 +68,10 @@
         height: 450px;
     }
 
+    .about-content .info {
+        margin-top: 12rem;
+    }
+
     .about-content .info h2 {
         font-size: 2.2rem;
         color: #ff0000;
@@ -83,10 +87,10 @@
         line-height: 1.8;
     }
 
-    .info-container {
+    /* .info-container {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .info-items {
         display: flex;
