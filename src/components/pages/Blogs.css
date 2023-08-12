@@ -76,9 +76,7 @@
 /*  card ends  */
 
 /*  blogs media query starts  */
-
-@media (max-width: 991px) {}
-
+/*  less than 768px screen*/
 @media (max-width: 768px) {
     .blog-container {
         display: grid;
@@ -101,7 +99,31 @@
     }
 }
 
-@media (max-width: 450px) {}
+/*  less than 450px screen*/
+@media (max-width: 450px) {
+    .title h1 {
+        width: 120px;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-container .card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .card img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .more-btn {
+        margin: 2rem 5.7rem;
+    }
+}
 
 /*  blogs media query ends  */
 /*  blog ends  */

@@ -68,10 +68,6 @@
         height: 450px;
     }
 
-    .about-content .info {
-        margin-top: 8rem;
-    }
-
     .about-content .info h2 {
         font-size: 2.2rem;
         color: #ff0000;
@@ -85,6 +81,11 @@
         padding-top: 1rem;
         font-size: 1.3rem;
         line-height: 1.8;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
     }
 
     .info-items {
@@ -109,17 +110,17 @@
     .about-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-left: 3rem;
     }
 
     .about-content img {
-        height: 450px;
+        width: 370px;
+        height: 480px;
     }
 
     .about-content .info {
-        margin-top: 8rem;
+        margin-top: .1rem;
+        margin-bottom: 2rem;
     }
 
     .about-content .info h2 {
@@ -137,21 +138,8 @@
         line-height: 1.8;
     }
 
-    .info-items {
-        display: flex;
-        flex-direction: column;
-        margin-left: -40rem;
-        gap: 2rem;
-    }
-
-    .info-name b {
-        color: #ff0000;
-        font-size: 1.3rem;
-    }
-
-    .info-name p {
-        font-size: 1rem;
-        line-height: 2;
+    .info-container {
+        display: none;
     }
 }
 
