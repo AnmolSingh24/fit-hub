@@ -81,7 +81,7 @@ html {
     transform: scale(1.05);
 }
 
-/*  latest work starts  */
+/*  workout starts  */
 
 .fitness-workout-container h1 {
     font-size: 3rem;
@@ -118,7 +118,7 @@ html {
 .workout-card img {
     border-radius: 5px;
     padding: 1rem;
-    width: 373px;
+    width: 360px;
     height: 250px;
     text-align: center;
 }
@@ -141,13 +141,13 @@ html {
 .workout-card a {
     margin: 2rem 11rem;
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1rem 2rem;
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
     font-size: 1.5rem;
     color: #fff;
 }
 
-/*  latest work ends  */
+/*  workout ends  */
 
 /*  testimonal starts  */
 
@@ -341,20 +341,28 @@ form {
         margin-left: .1rem;
     }
 
+    .test-container .test-content .feeds {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
     .test-container .test-content article {
         width: 250px;
         height: 130px;
-        margin-bottom: -3rem;
+        margin-bottom: .2rem;
     }
 
     .test-container .test-content article .test-img img {
         width: 30px;
         height: 30px;
+        margin-top: 2rem;
         margin-left: -6rem;
     }
 
     .test-container .test-content article .test-img h3 {
         font-size: 1.8rem;
+        padding-top: 1.5rem;
     }
 
     .footer-container {
