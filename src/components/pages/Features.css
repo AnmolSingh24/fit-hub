@@ -22,6 +22,7 @@
 .feature-title .box-container .box,
 .box-container .second {
     width: 400px;
+    height: 600px;
     background: rgb(22, 22, 22);
 }
 
@@ -76,5 +77,60 @@
     color: #aaa;
     padding: 1rem 0;
 }
+
+/*  features media query starts  */
+
+@media (max-width: 768px) {
+
+    .feature-title h1 {
+        width: 220px;
+    }
+
+    .feature-title .box-container {
+        width: 700px;
+        margin-left: 4rem;
+    }
+
+    .feature-title .box-container .box .image,
+    .box-container .second .image {
+        height: 34rem;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .feature-title h1 {
+        width: 200px;
+    }
+
+    .feature-title .box-container {
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-title .box-container .box,
+    .box-container .second {
+        margin-bottom: 3rem;
+    }
+
+    .feature-title .box-container .box,
+    .box-container .second {
+        width: 300px;
+    }
+
+    .feature-title .box-container .box .image img,
+    .box-container .second .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+/*  features media query ends  */
 
 /*  Gym Features ends  */
