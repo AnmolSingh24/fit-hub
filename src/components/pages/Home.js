@@ -1,18 +1,6 @@
 import React from 'react';
 import './Home.css'
 
-// var swiper = new swiper(".home-slider", {
-//     spaceBetween: 20,
-//     effect: "fade",
-//     grabCursor: true,
-//     loop: true,
-//     centeredSlides: true,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
-
 const WorkoutCard = ({ img, title, text, btn }) => {
     return (
         <div className="workout-card" id="card1">
@@ -79,11 +67,13 @@ const Home = () => {
                         <a href='/' className='btn'>Read More</a>
                     </div>
 
-                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596402/pic-1_rsvzyy.png'} name="Martin D'Souza" />
+                    <div className='feeds'>
+                        <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596402/pic-1_rsvzyy.png'} name="Martin D'Souza" />
 
-                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png'} name="Laraya Stafford" />
+                        <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596543/pic-2_ew8mxs.png'} name="Laraya Stafford" />
 
-                    <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596624/pic-3_hm7f8s.png'} name="Lisa Christopher" />
+                        <Feedback text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} img={'https://res.cloudinary.com/djdblxcxt/image/upload/v1691596624/pic-3_hm7f8s.png'} name="Lisa Christopher" />
+                    </div>
                 </div>
             </div>
 
