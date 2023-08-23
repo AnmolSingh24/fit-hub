@@ -75,6 +75,7 @@ html {
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
     font-size: 1.5rem;
     color: #fff;
+    border: none;
 }
 
 .btn:hover {
@@ -189,6 +190,11 @@ article p {
     line-height: 1.8;
 }
 
+.test-content .feeds{
+    display: flex;
+    gap: 2rem;
+}
+
 .test-content article .test-img {
     display: flex;
     justify-content: center;
@@ -247,7 +253,7 @@ form {
 
 .box form textarea {
     margin-top: 1rem;
-    padding: 1.2rem 3.5rem;
+    padding: 1.2rem 3.2rem;
     border-radius: 5px;
     background-color: rgb(22, 22, 22);
     text-align: start;
