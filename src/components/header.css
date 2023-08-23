@@ -2,10 +2,6 @@ body {
     background-color: black;
 }
 
-/* .nav-container {
-    padding: 5rem 9%;
-} */
-
 .nav-container {
     width: 100vw;
     display: flex;
@@ -15,15 +11,16 @@ body {
     right: 0;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 0rem 8rem;
     background: black;
-    z-index: 50;
+    z-index: 1;
 }
 
 .nav-container .logo {
     font-weight: bolder;
     color: white;
     font-size: 3rem;
+    text-decoration: none;
 }
 
 .nav-container .logo span {
@@ -42,16 +39,11 @@ body {
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .nav-container .navbars ul a:hover {
     background-color: red;
-}
-
-#menu-btn {
-    color: #ffffff;
-    cursor: pointer;
-    display: none;
 }
 
 /*  header media queries starts  */
@@ -66,14 +58,6 @@ body {
 /*  for than 768 pixel screen  */
 @media (max-width: 768px) {
 
-    /* .nav-container .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        border-color: #000;
-    } */
-
     .nav-container .navbar a {
         display: block;
         font-size: 2rem;
@@ -86,7 +70,6 @@ body {
 
     .nav-container .navbars ul {
         padding-left: 5rem;
-        margin-left: -10rem;
     }
 
     .nav-container .navbars ul a {
@@ -97,23 +80,29 @@ body {
 /*  less than 450 pixel screen  */
 
 @media (max-width: 450px) {
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .header {
-        padding-bottom: 1.5rem;
+        padding-top: 1.2rem;
     }
 
-    #menu-btn {
-        display: inline-block;
-        height: 60px;
-        width: 60px;
-        color: #fff;
-        padding-top: 1rem;
-        padding-left: 5rem;
+    .nav-container .navbars ul {
+        position: absolute;
+        top: 90%;
+        right: 0;
+        left: 10;
+        margin-left: -10rem;
+        background-color: black;
     }
-
-    /* .nav-container .navbars ul #menu-btn svg {} */
 
     .nav-container .navbars ul a {
-        display: none;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        padding: 1.5rem;
     }
 }
 
