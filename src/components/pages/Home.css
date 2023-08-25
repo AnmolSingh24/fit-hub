@@ -104,8 +104,8 @@ html {
 }
 
 .workout-card {
-    width: 24.5%;
-    height: 450px;
+    width: 20%;
+    height: 380px;
     background-color: rgb(22, 22, 22);
     border-radius: 10px;
     margin-bottom: 5rem;
@@ -119,8 +119,8 @@ html {
 .workout-card img {
     border-radius: 5px;
     padding: 1rem;
-    width: 360px;
-    height: 250px;
+    width: 295px;
+    height: 200px;
     text-align: center;
 }
 
@@ -140,7 +140,7 @@ html {
 }
 
 .workout-card a {
-    margin: 2rem 11rem;
+    margin: 2rem 8rem;
     display: inline-block;
     padding: 1rem 2rem;
     background: linear-gradient(130deg, #ff0000 93%, transparent 90%);
@@ -190,7 +190,7 @@ article p {
     line-height: 1.8;
 }
 
-.test-content .feeds{
+.test-content .feeds {
     display: flex;
     gap: 2rem;
 }
