@@ -388,10 +388,15 @@ form {
 
 }
 
+/*  less than 450px screen  */
 @media (max-width: 450px) {
 
     html {
         font-size: 55%;
+    }
+
+    .wrapper .slide .content h3 {
+        font-size: 3.5rem;
     }
 
     .wrapper .slide a {
@@ -436,29 +441,28 @@ form {
         padding: .8rem;
     }
 
-    .test-container .test-content {
-        display: flex;
-        flex-direction: column;
-    }
-
     .test-container .test-content div a {
         margin-left: .1rem;
     }
 
+    .test-container .test-content .feeds {
+        display: flex;
+        flex-direction: column;
+    }
+
     .test-container .test-content article {
-        width: 250px;
+        width: 220px;
         height: 130px;
-        margin-bottom: -3rem;
     }
 
     .test-container .test-content article .test-img img {
         width: 30px;
         height: 30px;
-        margin-left: -6rem;
+        margin-left: -2rem;
     }
 
     .test-container .test-content article .test-img h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .footer-container {

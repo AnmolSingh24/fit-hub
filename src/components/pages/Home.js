@@ -80,6 +80,11 @@ const Home = () => {
             <div className='footer-container'>
                 <div className='box'>
                     <h3>Quick Links</h3>
+                    <div className='social-links'>
+                        <img src='' />
+                        <img src='' />
+                        <img src='' />
+                    </div>
                 </div>
 
                 <div className='box'>

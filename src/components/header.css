@@ -35,7 +35,7 @@ body {
 }
 
 .nav-container .navbars ul a {
-    padding: 1.5rem;
+    padding: 2.5rem;
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
@@ -49,11 +49,11 @@ body {
 /*  header media queries starts  */
 
 /*  for 991 pixel screen  */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .header {
         padding: 0 2rem;
     }
-}
+} */
 
 /*  for than 768 pixel screen  */
 @media (max-width: 768px) {
@@ -73,6 +73,7 @@ body {
     }
 
     .nav-container .navbars ul a {
+        padding: 1.8rem;
         font-size: 1.5rem;
     }
 }

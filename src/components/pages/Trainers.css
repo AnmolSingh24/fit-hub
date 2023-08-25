@@ -105,6 +105,13 @@
 }
 
 @media (max-width: 450px) {
+    .trainers h1 {
+        width: 120px;
+        height: 40px;
+        font-size: 2.5rem;
+        margin-top: 12rem;
+    }
+
     .trainers .box-container {
         display: flex;
         flex-direction: column;
